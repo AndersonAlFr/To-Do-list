@@ -1,0 +1,132 @@
+body{
+    height: 100vh;
+    text-align: center;
+    font-family: sans-serif;
+    background-image: linear-gradient( 126.3deg,  rgba(30,2,83,1) 32.2%, rgba(198,55,160,0.46) 109.2% );
+    color: rgb(238, 240, 242);
+}
+
+.tasks-container{
+    width: 500px;
+    padding-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+.add-task{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-bottom: 50px;
+}
+
+.add-task input{
+    background: transparent;
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.add-task input:hover{
+    background-color: rgba(238, 240, 242, 0.699);
+}
+
+.add-task input:focus{
+    background-color: rgba(238, 240, 242, 0.699);
+}
+
+.add-task input::placeholder{
+    color: #048A81;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.4rem;
+    margin-bottom: 60px;
+}
+
+.task-submit{
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 8px;
+    background: none;
+    font-size: 17px;
+}
+
+.task-submit:hover{
+    border: 1px solid rgba(238, 240, 242, 0.505);
+    color: #048A81 ;
+}
+
+.task-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.task-list li{
+    border: 1px solid #048A81;
+    background: transparent;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 50px;
+    position: relative;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.task-list li ion-icon{
+    position: absolute;
+    padding: 5px;
+    margin-right: 10px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+
+.task-list li ion-icon:hover{
+    transform: scale(1.1);
+}
+
+.done-btn{
+    right: 40px;
+}
+
+.done-btn:hover{
+    background-color: #048a81;
+}
+
+.close-btn{
+    right: 0;
+}
+
+.close-btn:hover{
+    background-color: #D81159;
+}
+
+.hide{
+    display: none;
+}
+
+.task-list .done{
+    color: rgb(66, 66, 66);
+    background-color: rgba(238, 240, 242, 0.505);
+}
